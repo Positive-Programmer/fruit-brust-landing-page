@@ -13,7 +13,10 @@
     <!-- Tailwind CSS & DaisyUI CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <!-- font-family: 'Lato', sans-serif; -->
+
+    <!-- Font awesome CDN Link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Tailwind CSS Configuration -->
     <script>
@@ -39,9 +42,29 @@
 <body class="font-lato">
     <!-- Header section start -->
     <header>
-        <nav>
-            hello
-        </nav>
+        <div class="navbar bg-primary w-11/12 mx-auto my-5 rounded-full text-white px-2 sm:gap-0 gap-10">
+            <div class="navbar-start hidden lg:block">
+
+                <ul class="menu menu-horizontal px-1 font-semibold text-base  hidden lg:flex">
+                    <li><a>Home</a></li>
+                    <li><a>About US</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center">
+                <a class="flex items-center gap-2">
+                    <img class="w-10" src="./assets/logo.png" alt="">
+                    <span class="font-bold text-3xl">Fruit Burst</span>
+                </a>
+            </div>
+            <div class="navbar-end relative">
+                <input type="text" placeholder="Search Here"
+                    class="input input-bordered input-primary max-w-xs rounded-full border-none" />
+                <ion-icon class="font-bold text-2xl absolute text-black right-2" name="search-outline"></ion-icon>
+            </div>
+
+        </div>
     </header>
     <!-- Header section Ends -->
 </body>
