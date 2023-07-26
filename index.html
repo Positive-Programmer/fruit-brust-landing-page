@@ -15,8 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
 
     <!-- Font awesome CDN Link -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
     <!-- Tailwind CSS Configuration -->
     <script>
@@ -169,18 +169,18 @@
     <!-- Main section start -->
     <main class="mb-40">
         <section id="special-products"
-            class="bg-white w-9/12 mx-auto shadow-md flex justify-around p-5 rounded-md relative -top-24">
+            class="bg-white w-9/12 mx-auto shadow-md sm:flex hidden justify-around p-5 rounded-md relative lg:-top-24 md:-top-10">
             <div class="flex flex-col justify-center items-center">
                 <img src="./assets/fruit1.png" alt="">
                 <h3 class="text-xl font-medium">Strawberry</h3>
             </div>
             <div class="flex flex-col justify-center items-center">
                 <img src="./assets/fruit2.png" alt="">
-                <h3 class="text-xl font-medium">Strawberry</h3>
+                <h3 class="text-xl font-medium">Orange</h3>
             </div>
             <div class="flex flex-col justify-center items-center">
                 <img src="./assets/fruit3.png" alt="">
-                <h3 class="text-xl font-medium">Strawberry</h3>
+                <h3 class="text-xl font-medium">Mango</h3>
             </div>
             <div class="flex flex-col justify-center items-center">
                 <img src="./assets/fruit4.png" alt="">
@@ -188,9 +188,53 @@
             </div>
             <div class="flex flex-col justify-center items-center">
                 <img src="./assets/fruit5.png" alt="">
-                <h3 class="text-xl font-medium">Strawberry</h3>
+                <h3 class="text-xl font-medium">Mango</h3>
             </div>
         </section>
+        <!-- Deal Of the day Section start -->
+        <section id="deal" class="w-11/12 mx-auto">
+            <div class="flex sm:flex-row flex-col gap-10 justify-between items-center">
+                <div class="sm:text-left text-center mb-5 lg:mb-0 md:0">
+                    <h3 class="text-body text-3xl font-extrabold sm:mb-5">Deal of the day</h3>
+                    <p class="lg:w-2/3 w-full">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin
+                        literature from 45 BC,
+                        making it over 2000 years old.
+                    </p>
+                </div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-start">
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl font-bold">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <span>:</span>
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl font-bold">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <span>:</span>
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl font-bold">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <span>:</span>
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl font-bold">
+                            <span style="--value:28;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Deal Of the day Section Ends -->
     </main>
     <!-- Main section Ends -->
 </body>
