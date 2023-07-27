@@ -46,8 +46,8 @@
 
 <body class="font-lato">
     <!-- Header section start -->
-    <header class="w-11/12 mx-auto">
-        <nav class="navbar bg-primary  my-5 rounded-full text-white px-2 sm:gap-0 gap-10">
+    <header class="sm:w-11/12 mx-auto">
+        <nav class="navbar bg-primary sm:my-5 sm:mb-2  sm:rounded-full rounded-none text-white px-2 sm:gap-0 gap-10">
             <div class="navbar-start hidden lg:block">
 
                 <ul class="menu menu-horizontal px-1 font-semibold text-base  hidden lg:flex">
@@ -63,15 +63,30 @@
                     <span class="font-bold text-3xl">Fruit Burst</span>
                 </a>
             </div>
-            <div class="navbar-end relative">
-                <input type="text" placeholder="Search Here"
-                    class="input input-bordered input-primary max-w-xs rounded-full border-none" />
-                <ion-icon class="font-bold text-2xl absolute text-black right-2" name="search-outline"></ion-icon>
+            <div class="navbar-end">
+                <div class="relative sm:block hidden">
+                    <input type="text" placeholder="Search Here"
+                        class="input input-bordered input-primary max-w-xs rounded-full border-none" />
+                    <ion-icon class="font-bold text-2xl text-slate-600 absolute top-3 right-2"
+                        name="search-outline"></ion-icon>
+                </div>
+                <div class="dropdown dropdown-end sm:hidden block">
+                    <label tabindex="0" class="mr-5">
+                        <ion-icon name="menu-outline" class="text-3xl font-extrabold"></ion-icon>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-primary rounded-md w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About US</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- Banner carousel section -->
         <section id="banner">
-            <div class="carousel w-full h-[75vh] rounded-md">
+            <div class="carousel w-full h-[75vh] sm:rounded-md">
                 <!-- Slide 01 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="bg-red-400 w-full h-[100%] flex justify-center items-center">
@@ -335,13 +350,13 @@
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
             <div class="relative text-white">
                 <h2 class="text-4xl font-semibold mb-5">Meet the team</h2>
-                <p>
+                <p class="lg:w-1/2 md:w-2/3 w-full mx-auto">
                     Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                     literature from 45 BC,
                     making it over 2000 years old.
                 </p>
             </div>
-            <div class="relative grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-10">
+            <div class="relative grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-5 my-10">
                 <!-- Card 01 -->
                 <div class="flex flex-col justify-center items-center text-center text-white">
                     <div>
@@ -426,6 +441,17 @@
                             name="logo-linkedin"></ion-icon>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Why choose Us -->
+        <section id="why-choose-us" class="w-11/12 mx-auto py-10">
+            <div class="text-center">
+                <h2 class="text-4xl font-semibold mb-5">Why Choose Us</h2>
+                <p class="sm:w-1/2 w-full mx-auto">
+                    Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                    literature from 45 BC,
+                    making it over 2000 years old.
+                </p>
             </div>
         </section>
     </main>
