@@ -187,7 +187,7 @@
     </header>
     <!-- Header section Ends -->
     <!-- Main section start -->
-    <main class="mb-40">
+    <main>
         <section id="special-products"
             class="bg-white w-9/12 mx-auto shadow-md sm:flex hidden justify-around p-5 rounded-md relative lg:-top-24 md:-top-10">
             <div class="flex flex-col justify-center items-center">
@@ -256,16 +256,16 @@
         </section>
         <section id="deal-cards" class="my-10 w-11/12 mx-auto">
             <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- card 01 -->
                 <div
                     class="flex flex-col justify-center items-center border rounded-md shadow-md hover:shadow-sm transition-all duration-200 ease-in p-5">
                     <div class="py-10">
-                        <img src="./assets/fruit1.png" alt="">
-
+                        <img src="./assets/fruit8.png" alt="">
                     </div>
                     <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
                     <div class="divider w-9/12 mx-auto"></div>
                     <div class="text-center">
-                        <h3 class="text-rgb mb-5">Apples</h3>
+                        <h3 class="text-rgb mb-5 font-semibold">Red Dragon</h3>
                         <div class="text-primary text-2xl">
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
@@ -273,39 +273,105 @@
                             <ion-icon name="star-half-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <button class="btn btn-link text-primary capitalize no-underline">Details</button>
+                        <button onclick="cardModal_01.showModal()"
+                            class="btn btn-link text-primary capitalize no-underline">Details</button>
                     </div>
+                    <dialog id="cardModal_01" class="modal sm:modal-middle w-11/12 mx-auto">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-full">
+                                <figure class="px-10">
+                                    <img src="./assets/fruit8.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
+                                    <div class="divider w-9/12 mx-auto"></div>
+                                    <div class="text-center">
+                                        <h3 class="text-rgb mb-5 font-semibold">Red Dragon</h3>
+                                        <div class="text-primary text-2xl">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <button
+                                            class="btn btn-outline text-primary outline-primary hover:bg-primary hover:text-white hover:border-primary capitalize">Close</button>
+                                        <button
+                                            class="btn bg-primary text-white hover:bg-transparent btn-primary hover:text-primary border-primary hover:border-primary">Buy
+                                            Now</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </dialog>
                 </div>
+                <!-- card 02 -->
                 <div
                     class="flex flex-col justify-center items-center border rounded-md shadow-md hover:shadow-sm transition-all duration-200 ease-in p-5">
                     <div class="py-10">
                         <img src="./assets/fruit2.png" alt="">
-
                     </div>
                     <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
                     <div class="divider w-9/12 mx-auto"></div>
                     <div class="text-center">
-                        <h3 class="text-rgb mb-5">Apples</h3>
+                        <h3 class="text-rgb mb-5 font-semibold">Orange</h3>
                         <div class="text-primary text-2xl">
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
                             <ion-icon name="star-half-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <button class="btn btn-link text-primary capitalize no-underline">Details</button>
+                        <button onclick="cardModal_02.showModal()"
+                            class="btn btn-link text-primary capitalize no-underline">Details</button>
                     </div>
+                    <dialog id="cardModal_02" class="modal sm:modal-middle w-11/12 mx-auto">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-full">
+                                <figure class="px-10">
+                                    <img src="./assets/fruit2.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
+                                    <div class="divider w-9/12 mx-auto"></div>
+                                    <div class="text-center">
+                                        <h3 class="text-rgb mb-5 font-semibold">Orange</h3>
+                                        <div class="text-primary text-2xl">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <button
+                                            class="btn btn-outline text-primary outline-primary hover:bg-primary hover:text-white hover:border-primary capitalize">Close</button>
+                                        <button
+                                            class="btn bg-primary text-white hover:bg-transparent btn-primary hover:text-primary border-primary hover:border-primary">Buy
+                                            Now</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </dialog>
                 </div>
+                <!-- card 03 -->
                 <div
                     class="flex flex-col justify-center items-center border rounded-md shadow-md hover:shadow-sm transition-all duration-200 ease-in p-5">
                     <div class="py-10">
                         <img src="./assets/fruit3.png" alt="">
-
                     </div>
                     <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
                     <div class="divider w-9/12 mx-auto"></div>
                     <div class="text-center">
-                        <h3 class="text-rgb mb-5">Apples</h3>
+                        <h3 class="text-rgb mb-5 font-semibold">Mangoes</h3>
                         <div class="text-primary text-2xl">
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
@@ -313,19 +379,52 @@
                             <ion-icon name="star-half-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <button class="btn btn-link text-primary capitalize no-underline">Details</button>
+                        <button onclick="cardModal_03.showModal()"
+                            class="btn btn-link text-primary capitalize no-underline">Details</button>
                     </div>
+                    <dialog id="cardModal_03" class="modal sm:modal-middle w-11/12 mx-auto">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-full">
+                                <figure class="px-10">
+                                    <img src="./assets/fruit3.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
+                                    <div class="divider w-9/12 mx-auto"></div>
+                                    <div class="text-center">
+                                        <h3 class="text-rgb mb-5 font-semibold">Mangoes</h3>
+                                        <div class="text-primary text-2xl">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <button
+                                            class="btn btn-outline text-primary outline-primary hover:bg-primary hover:text-white hover:border-primary capitalize">Close</button>
+                                        <button
+                                            class="btn bg-primary text-white hover:bg-transparent btn-primary hover:text-primary border-primary hover:border-primary">Buy
+                                            Now</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </dialog>
                 </div>
+                <!-- card 04 -->
                 <div
                     class="flex flex-col justify-center items-center border rounded-md shadow-md hover:shadow-sm transition-all duration-200 ease-in p-5">
                     <div class="py-10">
                         <img src="./assets/fruit4.png" alt="">
-
                     </div>
                     <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
                     <div class="divider w-9/12 mx-auto"></div>
                     <div class="text-center">
-                        <h3 class="text-rgb mb-5">Red Dragon</h3>
+                        <h3 class="text-rgb mb-5 font-semibold">Strawberry</h3>
                         <div class="text-primary text-2xl">
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
@@ -333,20 +432,55 @@
                             <ion-icon name="star-half-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <button class="btn btn-link text-primary capitalize no-underline">Details</button>
+                        <button onclick="cardModal_04.showModal()"
+                            class="btn btn-link text-primary capitalize no-underline">Details</button>
                     </div>
+                    <dialog id="cardModal_04" class="modal sm:modal-middle w-11/12 mx-auto">
+                        <form method="dialog" class="modal-box">
+                            <div class="card w-full">
+                                <figure class="px-10">
+                                    <img src="./assets/fruit4.png" alt="" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h3 class="text-body text-2xl font-semibold">12.90$ - 18.85$</h3>
+                                    <div class="divider w-9/12 mx-auto"></div>
+                                    <div class="text-center">
+                                        <h3 class="text-rgb mb-5 font-semibold">Strawberry</h3>
+                                        <div class="text-primary text-2xl">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <button
+                                            class="btn btn-outline text-primary outline-primary hover:bg-primary hover:text-white hover:border-primary capitalize">Close</button>
+                                        <button
+                                            class="btn bg-primary text-white hover:bg-transparent btn-primary hover:text-primary border-primary hover:border-primary">Buy
+                                            Now</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </dialog>
                 </div>
+
             </div>
             <div class="mt-5 text-center">
                 <button
-                    class="btn btn-primary bg-primary border-primary hover:bg-transparent hover:text-primary hover:border-primary text-white capitalize">Shop
-                    All</button>
+                    class="btn btn-primary bg-primary border-primary hover:bg-transparent hover:text-primary hover:border-primary text-white capitalize">
+                    Shop All
+                </button>
             </div>
         </section>
         <!-- Deal Of the day Section Ends -->
         <!-- Team section start -->
         <section id="team-section"
-            class="w-11/12 mx-auto bg-team bg-cover bg-no-repeat bg-center py-10 text-center relative">
+            class="w-11/12 mx-auto bg-team bg-cover bg-no-repeat bg-center py-10 my-0 sm:my-20 text-center relative">
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
             <div class="relative text-white">
                 <h2 class="text-4xl font-semibold mb-5">Meet the team</h2>
@@ -444,7 +578,7 @@
             </div>
         </section>
         <!-- Why choose Us -->
-        <section id="why-choose-us" class="w-11/12 mx-auto py-10">
+        <section id="why-choose-us" class="w-11/12 mx-auto py-10 sm:my-20 my-0">
             <div class="text-center">
                 <h2 class="text-4xl font-semibold mb-5">Why Choose Us</h2>
                 <p class="sm:w-1/2 w-full mx-auto">
